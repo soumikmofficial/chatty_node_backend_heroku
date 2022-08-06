@@ -1,0 +1,2 @@
+- rename project in paakage.json
+- must add/change mongo uri before starting to work
