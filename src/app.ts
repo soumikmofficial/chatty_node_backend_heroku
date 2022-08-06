@@ -1,6 +1,6 @@
 import express from "express";
 import "express-async-errors";
-import morgan from "morgan";
+// import morgan from "morgan";
 import http from "http";
 import cors from "cors";
 import cookieParser from "cookie-parser";
@@ -39,7 +39,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
 
-app.use(morgan("tiny"));
+// app.use(morgan("tiny"));
 
 // .....................routes...................
 app.use("/api/v1/chat", chatRouter);
