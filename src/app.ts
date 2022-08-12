@@ -71,6 +71,8 @@ interface IOnlineUser {
   userId: string;
 }
 
+console.log(process.env.ORIGIN)
+
 import { Server } from "socket.io";
 import { IUser } from "./types";
 import chalk from "chalk";
