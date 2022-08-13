@@ -28,10 +28,12 @@ cloudinary.config({
   secure: true,
 });
 
+app.set("trust proxy", 1);
+
 app.use(
   cors({
     origin: [
-      "http://localhost:3000/",
+      "http://localhost:3000",
       process.env.ORIGIN as string,
       "http://localhost:3000",
     ],
@@ -71,7 +73,7 @@ interface IOnlineUser {
   userId: string;
 }
 
-console.log(process.env.ORIGIN)
+console.log(process.env.ORIGIN);
 
 import { Server } from "socket.io";
 import { IUser } from "./types";

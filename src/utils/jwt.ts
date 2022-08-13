@@ -44,6 +44,7 @@ export const attachCookiesToResponse = ({
     secure: process.env.NODE_ENV === "production",
     signed: true,
     expires: new Date(Date.now() + oneDay),
+    sameSite: 'none'
   });
 
   res.cookie("refreshToken", refreshTokenJWT, {
@@ -51,5 +52,6 @@ export const attachCookiesToResponse = ({
     secure: process.env.NODE_ENV === "production",
     signed: true,
     expires: new Date(Date.now() + longerExpiry),
+    sameSite: 'none'
   });
 };
