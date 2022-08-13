@@ -10,7 +10,7 @@ _The app is a representation of a modern-day chat app with complete auth workflo
 
 - Follows the MERN workflow.
 - Backend deployed on heroku while front end is on vercel. Can be used as a reference for cross domain deployment.
-- Has an improved auth flow with real mail verification with google. [Reference](https://www.youtube.com/watch?v=-rcRf7yswfM&ab_channel=yoursTRULY) was used as reference.
+- Has an improved auth flow with real mail verification with google. [This video](https://www.youtube.com/watch?v=-rcRf7yswfM&ab_channel=yoursTRULY) was used as reference.
 - uses Socket.io for realtime functionality.
 - Uses ContextAPI.
 - Build with Typescript.
